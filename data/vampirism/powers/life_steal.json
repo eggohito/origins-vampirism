@@ -1,0 +1,30 @@
+{
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:heal",
+                "amount": 4
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:absorption",
+                    "duration": 200,
+                    "amplifier": 1,
+                    "is_ambient": true,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:predicate",
+        "predicate": "vampirism:random_chance/0.5"
+    },
+    "cooldown": 20,
+    "name": "Life Steal",
+    "description": "You have a 50% chance to suck your prey's blood, which would heal you, and give you an absorption potion effect."
+}

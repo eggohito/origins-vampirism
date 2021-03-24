@@ -1,0 +1,22 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "vampirism:effective_weapons"
+                }
+            }
+        }
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": 3.0
+    },
+    "name": "Life is at Stake",
+    "description": "You take more damage if you were to be hit with a wooden weapon (specifically swords)."
+}

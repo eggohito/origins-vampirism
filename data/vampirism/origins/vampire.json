@@ -1,0 +1,17 @@
+{
+    "icon": "minecraft:red_dye",
+    "impact": 3,
+    "order": 4,
+    "powers": [
+        "vampirism:metamorph/form/bat",
+        "vampirism:metamorph/form/human",
+        "vampirism:metamorph/power",
+        "vampirism:metamorph/resource",
+        "vampirism:weakness/effective_weapons",
+        "vampirism:weakness/sunlight",
+        "vampirism:its_hecking_raw",
+        "vampirism:life_steal"
+    ],
+    "name": "Vampire",
+    "description": "A type of species that mainly survives by sucking blood of their prey, and metamorphing into a bat for easy travel."
+}

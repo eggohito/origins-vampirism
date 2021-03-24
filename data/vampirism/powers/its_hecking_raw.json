@@ -1,0 +1,19 @@
+{
+    "type": "origins:modify_food",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "vampirism:foodstuffs_raw"
+        }
+    },
+    "food_modifier": {
+        "operation": "addition",
+        "value": 3.0
+    },
+    "saturation_modifier": {
+        "operation": "addition",
+        "value": 1.0
+    },
+    "name": "It's Hecking RAW!",
+    "description": "Eating raw foodstuffs gives you additional saturation points."
+}

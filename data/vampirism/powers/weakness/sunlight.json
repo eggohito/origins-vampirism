@@ -1,0 +1,43 @@
+{
+    "type": "origins:burn",
+    "interval": 20,
+    "burn_duration": 1,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:predicate",
+                        "predicate": "vampirism:wearing_sunlight-proof"
+                    },
+                    {
+                        "type": "origins:in_block",
+                        "block_condition": {
+                            "type": "origins:offset",
+                            "condition": {
+                                "type": "origins:block",
+                                "block": "minecraft:water"
+                            },
+                            "y": 1
+                        }
+                    },
+                    {
+                        "type": "origins:in_block",
+                        "block_condition": {
+                            "type": "origins:block",
+                            "block": "minecraft:water"
+                        }
+                    }
+                ],
+                "inverted": true
+            },
+            {
+                "type": "origins:exposed_to_sun"
+            }
+        ]
+    },
+    "name": "Weakness: Sunlight",
+    "description": "You burn when in contact with sunlight."
+}
