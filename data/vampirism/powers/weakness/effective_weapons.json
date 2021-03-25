@@ -18,5 +18,5 @@
         "value": 3.0
     },
     "name": "Life is at Stake",
-    "description": "You take more damage if you were to be hit with a wooden weapon (specifically swords)."
+    "description": "You take more damage to certain weapons."
 }

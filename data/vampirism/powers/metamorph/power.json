@@ -1,44 +1,61 @@
 {
-    "type": "origins:active_self",
-    "entity_action": {
-        "type": "origins:if_else",
-        "condition": {
-            "type": "origins:resource",
-            "resource": "vampirism:metamorph/resource_toggle",
-            "comparison": ">=",
-            "compare_to": 1
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function vampirism:metamorph/power"
         },
-        "if_action": {
+        "cooldown": 100,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 5
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": true
+        },
+        "hidden": true
+    },
+    "sync-resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "resource operation @s vampirism:metamorph/resource = @s vmp.stamina"
+        },
+        "interval": 1,
+        "hidden": true
+    },
+    "default-form": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:change_resource",
-                    "resource": "vampirism:metamorph/resource_toggle",
-                    "change": -1
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players operation @s vmp.stamina = %max_stamina vmp.main"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function vampirism:metamorph/power"
                 }
             ]
         },
-        "else_action": {
+        "entity_action_removed": {
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:change_resource",
-                    "resource": "vampirism:metamorph/resource_toggle",
-                    "change": 1
+                    "type": "origins:execute_command",
+                    "command": "identity unequip @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function vampirism:reset"
                 }
             ]
         }
     },
-    "cooldown": 100,
-    "hud_render": {
-        "should_render": true,
-        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
-        "bar_index": 5
-    },
-    "key": {
-        "key": "key.origins.primary_active",
-        "continuous": true
-    },
     "name": "Metamorphosis: Bat Form",
-    "description": "You can metamorph into a Bat"
+    "description": "You can metamorph into a Bat."
 }

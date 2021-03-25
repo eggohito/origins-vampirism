@@ -39,5 +39,5 @@
         ]
     },
     "name": "Weakness: Sunlight",
-    "description": "You burn when in contact with sunlight."
+    "description": "You burn when in contact with sunlight, except if you're wearing any leather armor."
 }

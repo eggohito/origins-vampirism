@@ -7,24 +7,8 @@
             "value": -1
         },
         "condition": {
-            "type": "origins:resource",
-            "resource": "vampirism:metamorph/resource_toggle",
-            "comparison": "==",
-            "compare_to": 1
-        },
-        "hidden": true
-    },
-    "stamina-decrement": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "vampirism:metamorph/resource_stamina",
-            "change": -1
-        },
-        "interval": 20,
-        "condition": {
-            "type": "origins:resource",
-            "resource": "vampirism:metamorph/resource_toggle",
+            "type": "origins:scoreboard",
+            "objective": "vmp.toggle",
             "comparison": "==",
             "compare_to": 1
         },
@@ -51,32 +35,11 @@
             ]
         },
         "condition": {
-            "type": "origins:resource",
-            "resource": "vampirism:metamorph/resource_toggle",
+            "type": "origins:scoreboard",
+            "objective": "vmp.toggle",
             "comparison": "==",
             "compare_to": 1
         }
-    },
-    "stamina-empty": {
-        "type": "origins:action_over_time",
-        "interval": 1,
-        "rising_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:change_resource",
-                    "resource": "vampirism:metamorph/resource_toggle",
-                    "change": -1
-                }
-            ]
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "vampirism:metamorph/resource_stamina",
-            "comparison": "==",
-            "compare_to": 0
-        },
-        "hidden": true
     },
     "hidden": true
 }
