@@ -39,7 +39,8 @@
             "objective": "vmp.toggle",
             "comparison": "==",
             "compare_to": 1
-        }
+        },
+        "hidden": true
     },
     "hidden": true
 }

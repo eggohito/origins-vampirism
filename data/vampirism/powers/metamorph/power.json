@@ -54,7 +54,8 @@
                     "command": "function vampirism:reset"
                 }
             ]
-        }
+        },
+        "hidden": true
     },
     "name": "Metamorphosis: Bat Form",
     "description": "You can metamorph into a Bat."
