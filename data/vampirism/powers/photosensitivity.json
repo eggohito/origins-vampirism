@@ -38,6 +38,6 @@
             }
         ]
     },
-    "name": "Weakness: Sunlight",
-    "description": "You burn when in contact with sunlight, except if you're wearing any leather armor."
+    "name": "Photosensitivity",
+    "description": "You burn when in contact with sunlight. Except if you're wearing any leather armor, or in water."
 }

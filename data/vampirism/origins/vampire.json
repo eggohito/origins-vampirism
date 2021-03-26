@@ -3,14 +3,14 @@
     "impact": 3,
     "order": 4,
     "powers": [
+        "vampirism:blood-thirst/bloody_diet",
+        "vampirism:blood-thirst/life_steal",
         "vampirism:metamorph/form/bat",
         "vampirism:metamorph/form/human",
         "vampirism:metamorph/power",
-        "vampirism:metamorph/resource",
-        "vampirism:weakness/effective_weapons",
-        "vampirism:weakness/sunlight",
-        "vampirism:its_hecking_raw",
-        "vampirism:life_steal"
+        "vampirism:metamorph/stamina",
+        "vampirism:effective_weapons",
+        "vampirism:photosensitivity"
     ],
     "name": "Vampire",
     "description": "A type of species that mainly survives by sucking blood of their prey, and metamorphing into a bat for easy travel."

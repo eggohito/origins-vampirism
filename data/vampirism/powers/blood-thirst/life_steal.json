@@ -20,11 +20,7 @@
             }
         ]
     },
-    "condition": {
-        "type": "origins:predicate",
-        "predicate": "vampirism:random_chance/0.5"
-    },
     "cooldown": 20,
     "name": "Life Steal",
-    "description": "You have a 50% chance to suck your prey's blood, which would heal you, and give you an absorption potion effect."
+    "description": "Hitting a living mob will gradually fill your blood bar. If the blood bar is full, you'll be healed and given absorption."
 }

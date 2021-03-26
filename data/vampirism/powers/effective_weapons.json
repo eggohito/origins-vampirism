@@ -18,5 +18,5 @@
         "value": 3.0
     },
     "name": "Life is at Stake",
-    "description": "You take more damage to certain weapons."
+    "description": "You take more damage to wooden weapons/tools. \n(It's configurable by modifying the '#vampirism:effective_weapons' item tag)"
 }

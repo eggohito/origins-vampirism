@@ -22,7 +22,7 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:execute_command",
-            "command": "resource operation @s vampirism:metamorph/resource = @s vmp.stamina"
+            "command": "resource operation @s vampirism:metamorph/stamina = @s vmp.stamina"
         },
         "interval": 1,
         "hidden": true
@@ -58,5 +58,5 @@
         "hidden": true
     },
     "name": "Metamorphosis: Bat Form",
-    "description": "You can metamorph into a Bat."
+    "description": "You can metamorph into a Bat. You won't be able to deal any damage while in this form."
 }

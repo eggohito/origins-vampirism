@@ -1,0 +1,15 @@
+{
+    "type": "origins:multiple",
+    "foodstuffs-raw-only": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "vampirism:foodstuffs_raw"
+            },
+            "inverted": true
+        }
+    },
+    "name": "Bloody Diet",
+    "description": "You can only eat raw foodstuffs, which also gives you blood points."
+}
